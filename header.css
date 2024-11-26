@@ -1,6 +1,8 @@
 /* Style the header with a grey background and some padding */
 .poep {
   font-size: 200px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .header {
