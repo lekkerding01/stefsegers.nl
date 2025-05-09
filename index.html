@@ -3,68 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipping Delicious</title>
+    <title>Bestelservice</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
-    
-<style>
-    .home1 {
+    <style>
+
+
+input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -3px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+        text-align: left;
+        margin-right: 10px;
+    }
+
+    input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -3px;
+        position: relative;
+        background-color: #ffa500;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+        text-align: left;
+        margin-right: 10px;
+    }
+
+      input[type='checkbox']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -3px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+        text-align: left;
+        margin-right: 10px;
+    }
+
+    input[type='checkbox']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -3px;
+        position: relative;
+        background-color: #ffa500;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+        text-align: left;
+        margin-right: 10px;
+    }
+
+    .soorten {
     display: flex;
     flex-direction: row;
-    justify-content: middle;
+    justify-content: center;
     background-color: #ffcf60;
     border-radius: 10px;
     margin-top: 20px;
   }
   
-.home1 > div {
+.soorten > label > div {
     background-color: #ffbf38;
     border: 3px, solid #b36300;
     border-radius: 30px;
-    min-height: 160px;
-    width: auto;
+    width: 180px;
+    min-height: 135px;
     margin: 10px;
     padding: 50px;
-    text-align: left;
-    line-height: 40px;
+    text-align: center;
+    line-height: 10px;
+  }
+  
+  .toevoeging {
+        text-align: left;
+        display: block;
+    }
+
+.kopje {
     font-weight: bold;
-  }
+    font-size: 23px;
+}
 
-  .home1 > div > img {
-    width: 300px;
-  }
 
-  .home1 > div > h1 {
-    font-family: fantasy;
-    font-size: 40px;
-    text-align: center;
-  }
-  .home1 > div > h2 {
-    font-family: fantasy;
-    font-size: 30px;
-    font-weight: lighter;
-    text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
-</style>
+    </style>
 </head>
 <body>
 <div class="header">
 <img class="logo" src="../PO/logotekst.png"/>
 <a href="overons.php">Over ons</a>
 <a href="contact.php">Contact</a>
-<a href="bestellen.php">Bestellen</a>
-<a class="actief">Home</a>
+<a class="actief">Bestellen</a>
+<a href="home.php">Home</a>
 </div>
-<div class="home1">
-<div>
-<img src="logofull.png">
+<form action="besteld.php" method="GET">
+
+<div class="soorten">
+    <label>
+    <div><input name="basisgerecht" value="5" type="radio"><p class="p2">Pannenkoek naturel <br /><br /><br />€5,-</p></div>
+    </label>
+    <label>
+    <div><input name="basisgerecht" value="6" type="radio"><p class="p2">Choco-pannenkoek <br /><br /><br />€6,-</p></div>
+    </label>
+    <label>
+    <div><input name="basisgerecht" value="5.50" type="radio"><p class="p2">Wafel naturel <br /><br /><br />€5,50</p></div>
+    </label>
+    <label>
+    <div><input name="basisgerecht" value="5.5" type="radio"><p class="p2">Kaneel-wafel <br /><br /><br />€5,50</p></div>
+    </label>
 </div>
-<div>
-    <h1>Flipping Delicious<h1>
-    <h2>Waar je wafel en pannenkoek niet om kunnen wachten!<h2>
+
+<div class="soorten">
+    <div>
+    <p class="kopje">Toevoegingen</p>
+    <p>€0.75 per toevoeging</p>
+    <label><p class="toevoeging"><input name="toevoegingen[]" value="stroop" type="checkbox"> Stroop</p></label>
+    <label><p class="toevoeging"><input name="toevoegingen[]" value="poedersuiker" type="checkbox"> Poedersuiker</p></label>
+    <label><p class="toevoeging"><input name="toevoegingen[]" value="versfruit" type="checkbox"> Vers fruit</p></label>
+    <label><p class="toevoeging"><input name="toevoegingen[]" value="nutella" type="checkbox"> Nutella</p></label>
+    <label><p class="toevoeging"><input name="toevoegingen[]" value="slagroom" type="checkbox"> Slagroom</p></label>
+    <label><p class="toevoeging"><input name="toevoegingen[]" value="noten" type="checkbox"> Noten</p></label>
+    </div>
 </div>
+<div class="zendknop">
+<input type="submit">
 </div>
+
+</form>
 </body>
