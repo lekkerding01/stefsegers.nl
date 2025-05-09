@@ -1,0 +1,145 @@
+body{
+    background-color: #b36300;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #ffcf60;
+    padding: 20px 10px;
+    border-radius: 10px;
+  }
+  
+
+  .header a {
+    float: right;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: px;
+    border-radius: 22px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .header a:hover {
+    background-color: rgb(99, 63, 0);
+    color: whitesmoke;
+  }
+
+  .header a.actief {
+    background-color: rgb(99, 63, 0);
+    color: whitesmoke;
+  }
+
+  .header img.logo {
+    width: 120px;
+    
+  }
+
+  .header-right { 
+    float: right;
+  }
+
+.radiop {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: none;
+}
+
+.soorten {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffcf60;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+.soorten > div {
+    background-color: #ffbf38;
+    border: 3px, solid #b36300;
+    border-radius: 30px;
+    width: 180px;
+    min-height: 300px;
+    margin: 10px;
+    padding: 50px;
+    text-align: center;
+    line-height: 10px;
+  }
+
+
+.p3 {
+    font-size: 13.5px;
+    text-align: left;
+    font-family: fantasy;
+}
+
+.p2 {
+    font-size: 19px;
+    font-family: fantasy;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+
+  .p2:hover {
+    background-color: rgb(99, 63, 0);
+    color: whitesmoke;
+    border-radius: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+.p1 {
+    font-size: 15px;
+    font-family: fantasy;
+    text-align: left;
+    padding-top: 3px;
+    
+  }
+    .p1:hover {
+    background-color: rgb(99, 63, 0);
+    color: whitesmoke;
+    border-radius: 20px;
+    padding-top: 3px;
+    
+    }
+
+
+
+
+    .toevoeging {
+        text-align: left;
+        display: block;
+    }
+
+    .linksbreder {
+        padding-left: 10px;
+        top: -5px;
+        position: relative;
+    }
+    .zendknop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffcf60;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  input[type=submit] {
+    margin: 10px;
+    background-color: #ffbf38;
+    border: 3px, solid #b36300;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+  }
+
+  input[type=submit]:hover {
+    cursor: pointer;
+  }
+
